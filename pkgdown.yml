@@ -2,8 +2,8 @@ pandoc: 3.1.1
 pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
-  tidyomicsWorkshopBioc2023: tidyomicsWorkshopBioc2023.html
-last_built: 2023-07-20T20:09Z
+  tidyGenomicsTranscriptomics: tidyGenomicsTranscriptomics.html
+last_built: 2023-07-21T13:06Z
 urls:
   reference: https://tidybiology.github.io/tidyomicsWorkshopBioc2023/reference
   article: https://tidybiology.github.io/tidyomicsWorkshopBioc2023/articles
