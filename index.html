@@ -35,7 +35,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">tidyomicsWorkshopBioc2023</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.16.9</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.16.10</span>
       </span>
     </div>
 
@@ -85,8 +85,8 @@
 <h2 id="instructor-names-and-contact-information">Instructor names and contact information<a class="anchor" aria-label="anchor" href="#instructor-names-and-contact-information"></a>
 </h2>
 <ul>
-<li>Michael Love &lt;michaelisaiahlove at gmail.com&gt;</li>
 <li>Stefano Mangiola &lt;mangiola.s at wehi.edu.au&gt;</li>
+<li>Michael Love &lt;michaelisaiahlove at gmail.com&gt;</li>
 </ul>
 </div>
 <div class="section level2">
@@ -107,20 +107,22 @@
 <span></span>
 <span><span class="co"># To view vignette</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidybiology.github.io/tidyomicsWorkshopBioc2023">tidyomicsWorkshopBioc2023</a></span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/r/utils/vignette.html" class="external-link">vignette</a></span><span class="op">(</span><span class="st">"tidyomicsWorkshopBioc2023"</span><span class="op">)</span></span></code></pre>
-<p>To run the code, you could then copy and paste the code from the workshop vignette or <a href="https://raw.githubusercontent.com/tidybiology/tidyomicsWorkshopBioc2023/master/vignettes/tidyomicsWorkshopBioc2023.Rmd" class="external-link">R markdown file</a> into a new R Markdown file on your computer.</p>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/vignette.html" class="external-link">vignette</a></span><span class="op">(</span><span class="st">"tidyGenomicsTranscriptomics"</span><span class="op">)</span></span></code></pre>
+<p>To run the code, you could then copy and paste the code from the workshop vignette or <a href="https://raw.githubusercontent.com/tidybiology/tidyomicsWorkshopBioc2023/master/vignettes/tidyGenomicsTranscriptomics.Rmd" class="external-link">R markdown file</a> into a new R Markdown file on your computer.</p>
 </div>
 <div class="section level2">
 <h2 id="workshop-description">Workshop Description<a class="anchor" aria-label="anchor" href="#workshop-description"></a>
 </h2>
 <p>This tutorial will present how to perform analysis of single-cell RNA sequencing data following the tidy data paradigm. The tidy data paradigm provides a standard way to organise data values within a dataset, where each variable is a column, each observation is a row, and data is manipulated using an easy-to-understand vocabulary. Most importantly, the data structure remains consistent across manipulation and analysis functions.</p>
 <p>This can be achieved with the integration of packages present in the R CRAN and Bioconductor ecosystem, including <a href="https://stemangiola.github.io/tidyseurat/" class="external-link">tidyseurat</a>, <a href="https://stemangiola.github.io/tidySingleCellExperiment/" class="external-link">tidySingleCellExperiment</a> and <a href="https://www.tidyverse.org/" class="external-link">tidyverse</a>. These packages are part of the tidytranscriptomics suite that introduces a tidy approach to RNA sequencing data representation and analysis. For more information see the <a href="https://stemangiola.github.io/tidytranscriptomics/" class="external-link">tidy transcriptomics blog</a>.</p>
+<p>In addition this workshop will finish with examples of how genomic and transcriptomic data can be combined, e.g. ChIP-seq and scRNA-seq, also using tidy data paradigms for genomic ranges. This is enabled with the <a href="https://sa-lee.github.io/plyranges/" class="external-link">plyranges</a> package, with further information provided in the <a href="https://tidybiology.github.io/tidy-ranges-tutorial/" class="external-link">tidy-ranges-tutorial</a>.</p>
 <div class="section level3">
 <h3 id="pre-requisites">Pre-requisites<a class="anchor" aria-label="anchor" href="#pre-requisites"></a>
 </h3>
 <ul>
 <li>Basic familiarity with single cell transcriptomic analyses</li>
 <li>Basic familiarity with tidyverse</li>
+<li>Basic familiarity with genomic ranges</li>
 </ul>
 </div>
 <div class="section level3">
@@ -134,37 +136,40 @@
 </h3>
 <ul>
 <li>tidySingleCellExperiment</li>
+<li>plyranges</li>
 </ul>
 </div>
 <div class="section level3">
 <h3 id="workshop-goals-and-objectives">Workshop goals and objectives<a class="anchor" aria-label="anchor" href="#workshop-goals-and-objectives"></a>
 </h3>
-<p>In exploring and analysing RNA sequencing data, there are a number of key concepts, such as filtering, scaling, dimensionality reduction, hypothesis testing, clustering and visualisation, that need to be understood. These concepts can be intuitively explained to new users, however, (i) the use of a heterogeneous vocabulary and jargon by methodologies/algorithms/packages, (ii) the complexity of data wrangling, and (iii) the coding burden, impede effective learning of the statistics and biology underlying an informed RNA sequencing analysis.</p>
-<p>The tidytranscriptomics approach to RNA sequencing data analysis abstracts out the coding-related complexity and provides tools that use an intuitive and jargon-free vocabulary, enabling focus on the statistical and biological challenges.</p>
+<p>The tidytranscriptomics approach to single-cell RNA sequencing data analysis abstracts out the coding-related complexity and provides tools that use an intuitive and jargon-free vocabulary, enabling focus on the statistical and biological challenges.</p>
 <div class="section level4">
 <h4 id="learning-goals">Learning goals<a class="anchor" aria-label="anchor" href="#learning-goals"></a>
 </h4>
 <ul>
-<li>To approach data representation and analysis though a tidy data paradigm, integrating tidyverse with tidyseurat, tidySingleCellExperiment and tidyHeatmap.</li>
+<li>To approach data representation and analysis though a tidy data paradigm, integrating tidyverse with the SingleCellExperiment data object.</li>
+<li>To explore integration of genomic and transcriptomic data also using a tidy data paradigm.</li>
 </ul>
 </div>
 <div class="section level4">
 <h4 id="what-you-will-learn">What you will learn<a class="anchor" aria-label="anchor" href="#what-you-will-learn"></a>
 </h4>
 <ul>
-<li>Basic tidy operations possible with tidyseurat and tidySingleCellExperiment</li>
-<li>The differences between Seurat and SingleCellExperiment representation, and tidy representation</li>
-<li>How to interface Seurat and SingleCellExperiment with tidy manipulation and visualisation</li>
-<li>A real-world case study that will showcase the power of tidy single-cell methods compared with base/ad-hoc methods</li>
+<li>Basic <code>tidy</code> operations possible with <code>tidySingleCellExperiment</code> and <code>GRanges</code>
+</li>
+<li>How to interface <code>SingleCellExperiment</code> with tidy manipulation and visualisation</li>
+<li>A real-world case study that will showcase the power of <code>tidy</code> single-cell methods compared with base/ad-hoc methods</li>
+<li>Examples of how to integrate genomic and transcriptomic data (ChIP-seq and RNA-seq)</li>
 </ul>
 </div>
 <div class="section level4">
-<h4 id="what-you-will-not-learn">What you will not learn<a class="anchor" aria-label="anchor" href="#what-you-will-not-learn"></a>
+<h4 id="what-you-will-not-learn">What you will <em>not</em> learn<a class="anchor" aria-label="anchor" href="#what-you-will-not-learn"></a>
 </h4>
 <ul>
 <li>The molecular technology of single-cell sequencing</li>
 <li>The fundamentals of single-cell data analysis</li>
 <li>The fundamentals of tidy data analysis</li>
+<li>Detailed data integration methods (multi-view or multi-omics algorithms)</li>
 </ul>
 </div>
 </div>
