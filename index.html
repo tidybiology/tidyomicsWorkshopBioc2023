@@ -35,7 +35,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">tidyomicsWorkshopBioc2023</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.16.12</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.16.13</span>
       </span>
     </div>
 
@@ -59,7 +59,7 @@
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/tidybiology/tidyomicsWorkshopBioc2023" class="external-link">
+  <a href="https://github.com/tidyomics/tidyomicsWorkshopBioc2023" class="external-link">
     <span class="fa fa-github"></span>
      
   </a>
@@ -92,7 +92,7 @@
 <div class="section level2">
 <h2 id="syllabus">Syllabus<a class="anchor" aria-label="anchor" href="#syllabus"></a>
 </h2>
-<p>Material <a href="https://tidybiology.github.io/tidyomicsWorkshopBioc2023/">web page</a>.</p>
+<p>Material <a href="https://tidyomics.github.io/tidyomicsWorkshopBioc2023/">web page</a>.</p>
 <p>More details on the workshop are below.</p>
 </div>
 <div class="section level2">
@@ -113,19 +113,19 @@
 <span>          </span>
 <span><span class="co"># Install workshop package</span></span>
 <span></span>
-<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"tidybiology/tidyomicsWorkshopBioc2023"</span>, build_vignettes <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
+<span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"tidyomics/tidyomicsWorkshopBioc2023"</span>, build_vignettes <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span>
 <span></span>
 <span><span class="co"># To view vignette</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidybiology.github.io/tidyomicsWorkshopBioc2023">tidyomicsWorkshopBioc2023</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyomics.github.io/tidyomicsWorkshopBioc2023">tidyomicsWorkshopBioc2023</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/utils/vignette.html" class="external-link">vignette</a></span><span class="op">(</span><span class="st">"tidyGenomicsTranscriptomics"</span><span class="op">)</span></span></code></pre>
-<p>To run the code, you could then copy and paste the code from the workshop vignette or <a href="https://raw.githubusercontent.com/tidybiology/tidyomicsWorkshopBioc2023/master/vignettes/tidyGenomicsTranscriptomics.Rmd" class="external-link">R markdown file</a> into a new R Markdown file on your computer.</p>
+<p>To run the code, you could then copy and paste the code from the workshop vignette or <a href="https://raw.githubusercontent.com/tidyomics/tidyomicsWorkshopBioc2023/master/vignettes/tidyGenomicsTranscriptomics.Rmd" class="external-link">R markdown file</a> into a new R Markdown file on your computer.</p>
 </div>
 <div class="section level2">
 <h2 id="workshop-description">Workshop Description<a class="anchor" aria-label="anchor" href="#workshop-description"></a>
 </h2>
 <p>This tutorial will present how to perform analysis of single-cell RNA sequencing data following the tidy data paradigm. The tidy data paradigm provides a standard way to organise data values within a dataset, where each variable is a column, each observation is a row, and data is manipulated using an easy-to-understand vocabulary. Most importantly, the data structure remains consistent across manipulation and analysis functions.</p>
 <p>This can be achieved with the integration of packages present in the R CRAN and Bioconductor ecosystem, including <a href="https://stemangiola.github.io/tidyseurat/" class="external-link">tidyseurat</a>, <a href="https://stemangiola.github.io/tidySingleCellExperiment/" class="external-link">tidySingleCellExperiment</a> and <a href="https://www.tidyverse.org/" class="external-link">tidyverse</a>. These packages are part of the tidytranscriptomics suite that introduces a tidy approach to RNA sequencing data representation and analysis. For more information see the <a href="https://stemangiola.github.io/tidytranscriptomics/" class="external-link">tidy transcriptomics blog</a>.</p>
-<p>In addition this workshop will finish with examples of how genomic and transcriptomic data can be combined, e.g. ChIP-seq and scRNA-seq, also using tidy data paradigms for genomic ranges. This is enabled with the <a href="https://sa-lee.github.io/plyranges/" class="external-link">plyranges</a> package, with further information provided in the <a href="https://tidybiology.github.io/tidy-ranges-tutorial/" class="external-link">tidy-ranges-tutorial</a>.</p>
+<p>In addition this workshop will finish with examples of how genomic and transcriptomic data can be combined, e.g. ChIP-seq and scRNA-seq, also using tidy data paradigms for genomic ranges. This is enabled with the <a href="https://sa-lee.github.io/plyranges/" class="external-link">plyranges</a> package, with further information provided in the <a href="https://tidyomics.github.io/tidy-ranges-tutorial/" class="external-link">tidy-ranges-tutorial</a>.</p>
 <div class="section level3">
 <h3 id="pre-requisites">Pre-requisites<a class="anchor" aria-label="anchor" href="#pre-requisites"></a>
 </h3>
@@ -191,8 +191,8 @@
     <div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li><a href="https://github.com/tidybiology/tidyomicsWorkshopBioc2023/" class="external-link">Browse source code</a></li>
-<li><a href="https://github.com/tidybiology/tidyomicsWorkshopBioc2023/issues/new/choose" class="external-link">Report a bug</a></li>
+<li><a href="https://github.com/tidyomics/tidyomicsWorkshopBioc2023/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/tidyomics/tidyomicsWorkshopBioc2023/issues/new/choose" class="external-link">Report a bug</a></li>
 </ul>
 </div>
 
@@ -224,7 +224,7 @@
 <h2 data-toc-skip>Dev status</h2>
 <ul class="list-unstyled">
 <li><a href="https://zenodo.org/badge/latestdoi/379767139" class="external-link"><img src="https://zenodo.org/badge/379767139.svg" alt="DOI"></a></li>
-<li><a href="https://github.com/tidybiology/tidyomicsWorkshopBioc2023/actions/workflows/basic_checks.yaml" class="external-link"><img src="https://github.com/tidybiology/tidyomicsWorkshopBioc2023/actions/workflows/basic_checks.yaml/badge.svg" alt="Check, build, and push image"></a></li>
+<li><a href="https://github.com/tidyomics/tidyomicsWorkshopBioc2023/actions/workflows/basic_checks.yaml" class="external-link"><img src="https://github.com/tidyomics/tidyomicsWorkshopBioc2023/actions/workflows/basic_checks.yaml/badge.svg" alt="Check, build, and push image"></a></li>
 </ul>
 </div>
 

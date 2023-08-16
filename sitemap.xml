@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://tidybiology.github.io/tidyomicsWorkshopBioc2023/404.html</loc>
+    <loc>https://tidyomics.github.io/tidyomicsWorkshopBioc2023/404.html</loc>
   </url>
   <url>
-    <loc>https://tidybiology.github.io/tidyomicsWorkshopBioc2023/LICENSE-text.html</loc>
+    <loc>https://tidyomics.github.io/tidyomicsWorkshopBioc2023/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>https://tidybiology.github.io/tidyomicsWorkshopBioc2023/LICENSE.html</loc>
+    <loc>https://tidyomics.github.io/tidyomicsWorkshopBioc2023/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://tidybiology.github.io/tidyomicsWorkshopBioc2023/articles/index.html</loc>
+    <loc>https://tidyomics.github.io/tidyomicsWorkshopBioc2023/articles/index.html</loc>
   </url>
   <url>
-    <loc>https://tidybiology.github.io/tidyomicsWorkshopBioc2023/articles/tidyGenomicsTranscriptomics.html</loc>
+    <loc>https://tidyomics.github.io/tidyomicsWorkshopBioc2023/articles/tidyGenomicsTranscriptomics.html</loc>
   </url>
   <url>
-    <loc>https://tidybiology.github.io/tidyomicsWorkshopBioc2023/authors.html</loc>
+    <loc>https://tidyomics.github.io/tidyomicsWorkshopBioc2023/authors.html</loc>
   </url>
   <url>
-    <loc>https://tidybiology.github.io/tidyomicsWorkshopBioc2023/index.html</loc>
+    <loc>https://tidyomics.github.io/tidyomicsWorkshopBioc2023/index.html</loc>
   </url>
   <url>
-    <loc>https://tidybiology.github.io/tidyomicsWorkshopBioc2023/reference/gate_sce_obj.html</loc>
+    <loc>https://tidyomics.github.io/tidyomicsWorkshopBioc2023/reference/gate_sce_obj.html</loc>
   </url>
   <url>
-    <loc>https://tidybiology.github.io/tidyomicsWorkshopBioc2023/reference/index.html</loc>
+    <loc>https://tidyomics.github.io/tidyomicsWorkshopBioc2023/reference/index.html</loc>
   </url>
   <url>
-    <loc>https://tidybiology.github.io/tidyomicsWorkshopBioc2023/reference/pbmc_h3k4me3_hg38.html</loc>
+    <loc>https://tidyomics.github.io/tidyomicsWorkshopBioc2023/reference/pbmc_h3k4me3_hg38.html</loc>
   </url>
   <url>
-    <loc>https://tidybiology.github.io/tidyomicsWorkshopBioc2023/reference/pseudo_bulk.html</loc>
+    <loc>https://tidyomics.github.io/tidyomicsWorkshopBioc2023/reference/pseudo_bulk.html</loc>
   </url>
   <url>
-    <loc>https://tidybiology.github.io/tidyomicsWorkshopBioc2023/reference/sce_obj.html</loc>
+    <loc>https://tidyomics.github.io/tidyomicsWorkshopBioc2023/reference/sce_obj.html</loc>
   </url>
   <url>
-    <loc>https://tidybiology.github.io/tidyomicsWorkshopBioc2023/reference/sce_obj_UMAP3.html</loc>
+    <loc>https://tidyomics.github.io/tidyomicsWorkshopBioc2023/reference/sce_obj_UMAP3.html</loc>
   </url>
   <url>
-    <loc>https://tidybiology.github.io/tidyomicsWorkshopBioc2023/reference/theme_multipanel.html</loc>
+    <loc>https://tidyomics.github.io/tidyomicsWorkshopBioc2023/reference/theme_multipanel.html</loc>
   </url>
 </urlset>

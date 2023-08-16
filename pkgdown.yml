@@ -3,8 +3,8 @@ pkgdown: 2.0.7
 pkgdown_sha: ~
 articles:
   tidyGenomicsTranscriptomics: tidyGenomicsTranscriptomics.html
-last_built: 2023-07-27T04:36Z
+last_built: 2023-08-16T14:33Z
 urls:
-  reference: https://tidybiology.github.io/tidyomicsWorkshopBioc2023/reference
-  article: https://tidybiology.github.io/tidyomicsWorkshopBioc2023/articles
+  reference: https://tidyomics.github.io/tidyomicsWorkshopBioc2023/reference
+  article: https://tidyomics.github.io/tidyomicsWorkshopBioc2023/articles
 
